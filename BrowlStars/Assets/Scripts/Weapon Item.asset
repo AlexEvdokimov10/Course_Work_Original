@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ababe53921a1894697d678390173ce4, type: 3}
+  m_Name: Weapon Item
+  m_EditorClassIdentifier: 
+  itemName: Sword
+  maxAmount: 1
+  itemPrefab: {fileID: 6757602917669930652, guid: fb0270f874edb594897676c409645004, type: 3}
+  itemType: 2
+  itemDecription: It is weapon for close combat
+  inHandName: Sword
+  icon: {fileID: 21300000, guid: 8a39f0c7682823d4a842d14fd83e9b5e, type: 3}
+  isConsumeable: 0
+  changeHealth: 0
+  attackRange: 0
+  damage: 0
+  itemType: 2
