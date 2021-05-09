@@ -20,6 +20,8 @@ public class TerainGenerator : MonoBehaviour
     public Things apple;
     public Patroler patroler;
     public Obstacle obstacle;
+    public Things sword;
+    public Things catan;
 
 
 
@@ -68,9 +70,23 @@ public class TerainGenerator : MonoBehaviour
                     }
                     if((Random.Range(0, Width) % 20 == 0))
                     {
-                        var tempObstacle = Instantiate(obstacle);
-                        obstacle.transform.localPosition = new Vector3(i, y + 1, 0);
+                        var tempObstacle = Instantiate(obstacle,zero);
+                        tempObstacle.transform.localPosition = new Vector3(i, y+1, 0);
                     }
+                    if ((Random.Range(0, Width) % 25 == 0))
+                    {
+                        if (Random.Range(1, 2) % 2 == 0)
+                        {
+                            var tempSword = Instantiate(sword.itemPrefab, zero);
+                            tempSword.transform.localPosition = new Vector3(i, y + 1, 0);
+                        }
+                        else
+                        {
+                            var tempCatan = Instantiate(catan.itemPrefab, zero);
+                            tempCatan.transform.localPosition = new Vector3(i, y + 1, 0);
+                        }
+                    }
+                    
                 }
                 if (j > y - 1)
                 {
